@@ -4,7 +4,7 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class ClienteFibonacci {
+public class Cliente {
     public static void main(String[] args) {
         int port = 5003;
         var sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class ClienteFibonacci {
             System.out.println("Cliente conectado");
             do {
                 toServer = new PrintStream(client.getOutputStream());
-                System.out.println("Introduzca un número: ");
+                System.out.println("Introduzca un comando: ");
                 int n = sc.nextInt();
                 toServer.println(n);
                 fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
