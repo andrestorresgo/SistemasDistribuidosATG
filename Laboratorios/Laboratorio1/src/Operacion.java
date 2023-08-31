@@ -1,10 +1,10 @@
 public class Operacion {
     public static int analizar(String cadena) {
-        String[] partes = cadena.split("-");
-        String operacion = partes[0];
-        int a = Integer.parseInt(partes[1]);
-        int b = Integer.parseInt(partes[2]);
-        int c = Integer.parseInt(partes[3]);
+        String[] numeros = cadena.split("-");
+        String operacion = numeros[0];
+        int a = Integer.parseInt(numeros[1]);
+        int b = Integer.parseInt(numeros[2]);
+        int c = Integer.parseInt(numeros[3]);
 
         if (operacion.equals("mayor")) {
             return Math.max(Math.max(a, b), c);

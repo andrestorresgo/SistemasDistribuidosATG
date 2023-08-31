@@ -18,9 +18,13 @@ public class Cliente {
             toServer = new PrintStream(client.getOutputStream());
             System.out.println("Introduzca un la operación con el siguiente formato: OPERACION-A-B-C");
             String n = sc.nextLine();
-            toServer.println(n);
-            fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
-            System.out.println(fromServer.readLine());
+            while (!n.equals("salir")){
+                toServer.println(n);
+                fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
+                System.out.println(fromServer.readLine());
+                System.out.println("Introduzca un la operación con el siguiente formato: OPERACION-A-B-C");
+                n = sc.nextLine();
+            }
         }
         catch (Exception e){
             System.out.println("Error: " + e.getMessage());
