@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumirPronostico", "ConsumirPronostico\ConsumirPronostico.csproj", "{815BD609-489F-42AB-8673-33041955DE96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{815BD609-489F-42AB-8673-33041955DE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{815BD609-489F-42AB-8673-33041955DE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{815BD609-489F-42AB-8673-33041955DE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{815BD609-489F-42AB-8673-33041955DE96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7069B96D-2A0D-46B1-A2D8-D98A4E30F307}
+	EndGlobalSection
+EndGlobal
